@@ -1,0 +1,93 @@
+.loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+}
+
+.loading div{
+    width: 10vmax;
+    height: 10vmax;
+    border-bottom:5px solid black;
+
+    border-radius: 50%;
+    animation: loadingRotate 800ms linear infinite;
+}
+@keyframes loadingRotate {
+    to{
+        transform: rotateZ(-360deg);
+    }
+}
+
+/* ---------------------------------Notification - page----------------------- */
+.errMsg{
+    background: rgb(214,10,10);
+    color: #fff9;
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 1.3px;
+    }
+    .successMsg{
+        background: rgb(9,158,54);
+        color: #fff9;
+        text-align: center;
+        padding: 10px 0;
+        letter-spacing: 1.3px;
+    }
+
+
+
+
+
+
+/* ---------------------------------------Filter------------------------------------ */
+.filter_page{
+    margin-top: 20px;
+}
+.filter_Card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.filter_Card>.search{
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.search>input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+}
+.filter_price{
+    max-width:500px;
+    width: 100%;
+    margin: 0 10px;
+    margin-right: 20px;
+}
+
+.rating_box{
+    max-width: 250px;
+    width: 100%;
+}
+
+@media (max-width:1250) {
+    .filter_page{
+        padding: 0 20px;
+    }
+}
+.category_box{
+    max-width: 500px;
+    width: 100%;
+}
+.category_box>select{
+    height: 40px;
+    width: 100%;
+}

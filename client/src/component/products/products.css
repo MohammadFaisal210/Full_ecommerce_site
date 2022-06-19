@@ -1,0 +1,115 @@
+.products{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr)) ;
+    justify-items: center;
+    margin: 20px 0;
+}
+.productCard{
+    max-width: 200px;
+    overflow: hidden;
+    height: 320px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 6px;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.5s ease-in-out;
+}
+.productCard>img{
+    width: 100%;
+    height:200px;
+    object-fit: cover;
+}
+.productCard:hover{
+    transform: scale(1.04);
+}
+.productInfo>p{
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 43px;
+    overflow: hidden;
+    color: #323232;
+}
+.productInfo>h5{
+    color: red;
+}
+.productInfo>h5>span{
+    font-size: 22px;
+}
+.productInfo{
+    background:white;
+    height: 120px;
+    padding: 0 7px;
+}
+.stars{
+    display: flex;
+    justify-content: space-between;
+}
+.stars>p{
+    color: #323232;
+}
+.stars>span {
+    font-size: 20px;
+}
+
+.paginationBox{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.paginationBox>ul{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.paginationBox>ul>li{
+    background:rgba(117, 115, 115, 0.926);
+    border: 1px solid white;
+    padding: 10px 17px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.paginationBox>ul>li:first-child{
+    border-radius: 5px 0px 0 5px;
+}
+.paginationBox>ul>li:last-child{
+    border-radius: 0px 5px 5px 0px;
+}
+.paginationBox>ul>li:hover{
+    background: transparent;
+}
+.pageItemActive{
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    .products{
+         grid-template-columns:repeat(auto-fill,minmax(170px,1fr)) ;
+    }
+    .productCard{
+        max-width: 170px;
+        width: 100%;
+        height: 250px;
+        margin: 10px;
+    }
+    .productCard>img{
+        height: 150px;
+    }
+    .productInfo{
+        height: 100px;
+    }
+}

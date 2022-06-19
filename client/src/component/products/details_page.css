@@ -1,0 +1,107 @@
+.details_page{
+    max-width: 900px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 0 auto;
+}
+.details_card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.images_box{
+    max-width: 400px;
+    width: 100%;
+}
+.product_images{
+    width: 100%;
+    object-fit: cover;
+}
+.details_infor{
+    max-width: 450px;
+    padding: 0 10px;
+}
+.details_infor>h4{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fb5200;
+}
+.details_infor>h5{
+    font-size: 16px;
+    color: red;
+    padding: 8px 0;
+}
+.details_infor>h5>span{
+    font-size: 20px;
+}
+.details_infor>span{
+    font-size: 20px;
+}
+.submitDialog{
+    display: flex;
+    flex-direction: column;
+}
+.details_infor>p{
+    padding: 5px 0;
+}
+.cartInput{
+    padding: 5px 0;
+}
+.details_button{
+    display: flex;
+    flex-direction: column;
+}
+.details_button>button{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    background-color:#333;
+    border: none;
+    margin: 7px 0;
+
+}
+.submitDialog>span{
+    font-size: 20px;
+}
+.submitDialogTextArea{
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    font-size: 16px;
+    margin: 1vmax 0;
+    outline: none;
+    padding: 1rem;
+}
+.review_card{
+    max-width: 350px;
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px;
+}
+.review_card>h4{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.review_card>img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.review_card>span{
+    font-size: 20px;
+}
+.review_card>p{
+    max-height: 100px;
+    overflow-y:auto;
+}
+.review_wrapper{
+    width: 100%;
+    overflow: auto;
+    display: flex;
+}
+.reviews{   
+margin: 0 auto;
+}

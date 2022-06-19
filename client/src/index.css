@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+  background-blend-mode: screen;
+  cursor: url("./cursor_PNG72.png"),auto;
+}
+
+code {
+  font-family: 'Lobster', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+}
+h1,h2,h3{
+  font-family: 'Oleo Script', cursive;
+  font-weight: 400;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  list-style: none;
+}
+.container{
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.greenColor{
+  color:green
+}
+.redColor{
+  color:red
+}
+.container>div>h1,h2{
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid black;
+  width: auto;
+  margin:0 auto;
+  margin-top: 20px;
+}
+/* ------------------------Navbar------------------------- */
+
+@import url(./component/navbar/navbar.css);
+
+/* --------------------------------Login && Registration---------------------- */
+@import url(./component/auth/auth.css);
+
+/* ---------------------------------Details page--------------------------- */
+@import url(./component/products/details_page.css);
+
+/* ----------------------------------------Profile------------------------------ */
+@import url(./component/profile/profile.css);
+
+/* --------------------------products-------------------------- */
+@import url(./component/products/products.css);
+
+/* -------------------------Utils------------------------- */
+@import url(./component/utils/utils.css);
+
+/* --------------------------------Cart--------------------------------- */
+@import url(./component/cart/cart.css);
+
+/* -------------------------Admin Dashboard--------------------------- */
+@import url(./component/admin/dasboard.css);
+
+/* -----------------------------Admin products---------------------- */
+@import url(./component/admin/adminProducts.css);
+
+/* ----------------------footer---------- */
+@import url(./component/footer/footer.css);
+
+@media (max-width:100px) {
+  .header .menu ul li{
+      padding: 0 10px;
+  }
+  .header{
+      width: 100%;
+      padding:0px;
+      width: 100%;
+  }
+}
+
+@media (max-width:960px) {
+  header{
+      width: 100%;
+  }
+  .header .logo{
+      text-align: center;
+  }
+  
+  .header .menu ul{
+      padding: 0 20px;
+      position: fixed;
+      flex-direction: column;
+      display: flex;
+      left: -100%;
+      max-width: 300px;
+      background: #132226;
+      top: 70px;
+      height: 100vh;
+      padding: 10px;
+      z-index: 99;
+      transition: 0.6s ease-in-out;
+  }
+  .bars{
+      font-size: 22px;
+      display: block;
+  }
+  .header .menu ul li{
+      padding:15px;
+      border-bottom: 1px solid #be9063 ;
+      text-align:left;
+      margin: 5px 0;
+  }
+
+}

@@ -1,0 +1,82 @@
+.profile_page{
+    height: 100vh;
+}
+.profile_card{
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.profile_card>div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+} 
+.profile_right{
+    max-width: 350px;
+    width: 100%;
+}
+.profile_left>div{
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+}
+.profile_left>div>img{
+    width: 240px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.pro_edit_buutton{
+    max-width: 250px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+}
+.pro_edit_buutton:hover{
+    opacity: 1;
+}
+.profile_right>div{
+    display: flex;
+    margin: 20px 0;
+}
+
+/* -------------------------------edit Page-------------------------- */
+/* .avatar>div>input::file-selector-button{
+    width: 100%;
+} */
+.avatar>div>input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border: 1px solid #132226;
+    padding: 0px 0px !important;
+
+}
+.avatar>div>input::file-selector-button{
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    z-index: 1;
+    font-size: 16px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.avatar>div>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 5px;
+}

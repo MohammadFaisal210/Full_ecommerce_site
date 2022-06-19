@@ -1,0 +1,80 @@
+.order_card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.order_info>h1,.order_left>h1{
+    margin: 10px 0;
+    text-transform: capitalize;
+    border-bottom: 1px solid black;
+}
+.order_info>div{
+    display: flex;
+    padding: 10px 0;
+}
+.order_items{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.order_items>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order_items>div>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.order_items>div>div>p{
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.order_items>div>div>img{
+    width: 70px;
+}
+
+
+
+.order_right{
+    border-left: 1px solid #000;
+    min-height: 60vh;
+    padding-left: 20px;
+    max-width: 300px;
+    width: 100%;
+}
+.order_right>h1{
+    padding-left: 20px;
+    text-transform: capitalize;
+}
+.order_right>div{
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.order_right>div>button{
+    width: 100%;
+    height: 40px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #fb5200;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+.order_right>div>button:hover{
+    opacity: 1;
+}
+.order_right>div>p{
+    color: tomato;
+}
+
+@media (max-width:845px) {
+    .order_right{
+        border: none;
+    }
+}
